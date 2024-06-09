@@ -1,12 +1,12 @@
-#
+# Описание
 Это простая демонстрация конвейера машинного обучения.
 Он создает тестовые и тренировочные данные погоды, затем их обрабатывает и обучает модель.
 
-# Running the script 
+# Запуск скрипта
 
 bash pipeline.sh
 
-# Pipeline Diagram
+# Pipeline 
 ```mermaid
 graph TD
     A[Data Creation] --> B[Data Preprocessing]
