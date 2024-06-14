@@ -43,4 +43,4 @@ I recommend immediately installing the proposed modules, especially Git, because
 ```bash
 docker exec <container_id> cat /var/jenkins_home/secrets/initialAdminPassword
 ```
-![https://imgur.com/a/i3n2VW0]
+
