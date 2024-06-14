@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/vskolegov/MLOps/tree/main/lab2'
+            }
+        }
+        stage('Setup Environment') {
+            steps {
+                script {
+                    echo 'Creating a virtual environment, if not created'
+                    sh '''
+                        if [ ! -d ".venv" ]; thens
+                            python3 -m venv .venv
+                            echo "Virtual environment '.venv' has been created."
+                        fi
+                    '''
+                    echo 'Activating the virtual environment'
+                    sh '''
+                        . .venv/bin/activate
+                    '''
+                    echo 'Dependency installation'
+                    sh '''
+                        .venv/bin/pip install -r lab2/requirements.txt
+                        echo "Dependencies installed."
+                    '''
+                }
+            }
+        }
+        stage('Create Dataset') {
+            steps {
+                sh '.venv/bin/python lab2/create_dataset.py'
+            }
+        }
+        stage('Train Model') {
+            steps {
+                sh '.venv/bin/python lab2/train_model.py'
+            }
+        }
+        stage('Make Prediction') {
+            steps {
+                sh '.venv/bin/python lab2/make_prediction.py'
+            }
+        }
+    }
+}

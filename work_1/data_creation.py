@@ -40,12 +40,12 @@ def save_data():
     
     train_data = [
         create_linear_temperature_data(num_days=100, noise_factor=2, anomaly_factor=0.05),
-        create_sinusoidal_temperature_data(num_days=100, noise_factor=2, anomaly_factor=0.05),
+        create_sinusoidal_temperature_data(num_days=100, noise_factor=2, anomaly_factor=0.1),
         create_random_temperature_data(num_days=100, noise_factor=2, anomaly_factor=0.05)
     ]
     
     test_data = [
-        create_linear_temperature_data(num_days=50, noise_factor=2, anomaly_factor=0.05),
+        create_linear_temperature_data(num_days=50, noise_factor=2, anomaly_factor=0.1),
         create_sinusoidal_temperature_data(num_days=50, noise_factor=2, anomaly_factor=0.05),
         create_random_temperature_data(num_days=50, noise_factor=2, anomaly_factor=0.05)
     ]
