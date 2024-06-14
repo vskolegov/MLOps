@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/vskolegov/MLOps/tree/main/lab2'
+                git 'https://github.com/vskolegov/MLOps.git'
             }
         }
         stage('Setup Environment') {
