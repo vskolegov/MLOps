@@ -9,7 +9,7 @@ def make_prediction():
 
     # Загрузка тестовых данных
     data_test = pd.read_csv('data_test.csv')
-    X_test = data_test[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch']].values
+    X_test = data_test[['Pclass', 'Sex', 'Age', 'Siblings/Spouses Aboard', 'Parents/Children Aboard']].values
     y_test = data_test['Survived'].values
 
     # Прогнозирование

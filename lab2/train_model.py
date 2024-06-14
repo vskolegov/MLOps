@@ -5,7 +5,7 @@ import pickle
 def train_model():
     # Загрузка тренировочных данных
     data_train = pd.read_csv('data_train.csv')
-    X_train = data_train[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch']].values
+    X_train = data_train[['Pclass', 'Sex', 'Age', 'Siblings/Spouses Aboard', 'Parents/Children Aboard']].values
     y_train = data_train['Survived'].values
 
     # Обучение модели
