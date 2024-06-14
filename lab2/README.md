@@ -32,7 +32,9 @@ docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins
 
 Or manually in Docker Dektop
 
-Copy password from terminal and open Jenkins in your browser at http://localhost:8080 
+Copy password from terminal and open Jenkins in your browser at http://localhost:8080.
+
+I recommend immediately installing the proposed modules, especially Git, because it will be difficult to do this later.
 
 ## Jenkins
 
