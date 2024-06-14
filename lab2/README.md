@@ -44,6 +44,6 @@ I recommend immediately installing the proposed modules, especially Git, because
 docker exec <container_id> cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-![](https://github.com/vskolegov/MLOps/tree/main/lab2/scr/xSR93VK.png)
+![1](https://github.com/vskolegov/MLOps/tree/main/lab2/scr/xSR93VK.png)
 
-![](https://github.com/vskolegov/MLOps/tree/main/lab2/scr/Vng4oiv.png)
+![2](https://github.com/vskolegov/MLOps/tree/main/lab2/scr/Vng4oiv.png)
