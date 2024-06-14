@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 from sklearn.preprocessing import StandardScaler
+import io
 
 def create_dataset():
     # URL для скачивания данных
@@ -11,7 +12,7 @@ def create_dataset():
     data = response.content.decode('utf-8')
 
     # Чтение данных в DataFrame
-    df = pd.read_csv(pd.compat.StringIO(data))
+    df = pd.read_csv(io.StringIO(data))
 
     # Обработка данных
     df['Sex'] = df['Sex'].apply(lambda x: 0 if x == 'male' else 1)
