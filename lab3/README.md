@@ -37,3 +37,5 @@ Output sample
   "prediction": "Iris-setosa"
 }
 ```
+<img width="414" alt="image" src="https://github.com/vskolegov/MLOps/assets/76074529/9d84b066-57da-4286-8906-78d03533181d">
+<img width="416" alt="image" src="https://github.com/vskolegov/MLOps/assets/76074529/de17b436-8e46-44c4-88f6-db0b410b61c9">
