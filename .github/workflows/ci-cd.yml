@@ -24,14 +24,16 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd final_task/src
           python3 -m venv .venv
-          source .venv/bin/activate
-          pip install -r final_task/src/requirements.txt
+          . .venv/bin/activate
+          pip install -r requirements.txt
 
       - name: Train model
         run: |
-          source .venv/bin/activate
-          python final_task/src/train_model.py
+          cd final_task/src
+          . .venv/bin/activate
+          python train_model.py
 
       - name: Upload model
         uses: actions/upload-artifact@v2
